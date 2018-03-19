@@ -19,17 +19,23 @@
 - Step 16 - Using Component Scan to scan for beans
 - Step 17 - Lifecycle of a Bean - @PostConstruct and @PreDestroy
 - Step 18 - Container and Dependency Injection (CDI) - @Named, @Inject
-- Step 19 - Removing Spring Boot in Basic Application
+- Step 19 - **Removing Spring Boot in Basic Application**
 - Step 20 - Fixing minor stuff - Add Logback and Close Application Context
 - Step 21 - Defining Spring Application Context using XML - Part 1
 - Step 22 - Defining Spring Application Context using XML - Part 2
 - Step 23 - Mixing XML Context with Component Scan for Beans defined with Annotations
 - Step 24 - IOC Container vs Application Context vs Bean Factory
 - Step 25 - @Component vs @Service vs @Repository vs @Controller
-- Step 26 - Read values from external properties file
+- Step 26 - **Read values from external properties file**
 - Step 27 - Spring Unit Testing with a Java Context
 - Step 28 - Spring Unit Testing with an XML Context
 - Step 29 - Spring Unit Testing with Mockito
+
+#### Use diff
+
+- diff Step18.md Step19.md
+- diff Step18.md Step19.md --side-by-side --width=200 | less
+
 
 ## Notes
 ```
