@@ -4,7 +4,7 @@ Let's play and learn more about Spring JDBC, JPA and Spring Data JPA
 
 - Step 01 - Setting up a project with JDBC, JPA, H2 and Web Dependencies
 - Step 02 - Launching up H2 Console
-- Step 03 - Creating a Database Table in H2
+- Step 03 - Creating a Database Table in H2. **'data.sql' is loaded by auto configure.**
 - Step 04 - Populate data into Person Table
 - Step 05 - Implement findAll persons Spring JDBC Query Method
 - Step 06 - Execute the findAll method using CommandLineRunner

@@ -30,6 +30,7 @@
 	<build>
 		<pluginManagement>
 			<plugins>
+			<!-- 
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
@@ -41,6 +42,7 @@
 						<showWarnings>true</showWarnings>
 					</configuration>
 				</plugin>
+				-->
 				<plugin>
 					<groupId>org.apache.tomcat.maven</groupId>
 					<artifactId>tomcat7-maven-plugin</artifactId>

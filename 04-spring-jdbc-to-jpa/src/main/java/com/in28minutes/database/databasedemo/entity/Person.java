@@ -7,8 +7,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 
-@Entity
-@NamedQuery(name="find_all_persons", query="select p from Person p")
+@Entity // Schema updates, which is a hibernate feature, automatically create table person when you
+		// use in memory database
+//@Table(name="person")
+@NamedQuery(name = "find_all_persons", query = "select p from Person p")
 public class Person {
 
 	@Id

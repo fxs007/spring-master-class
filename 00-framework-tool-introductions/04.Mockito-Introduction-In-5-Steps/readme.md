@@ -18,7 +18,7 @@ Mockito is the most famous mocking framework in Java.
 
 - Step 1 : Setting up an example using http://start.spring.io.
 - Step 2 : Using a Stubs - Disadvantages
-- Step 3 : Your first mock. 
+- Step 3 : **Your first mock.** 
 - Step 4 : Using Mockito Annotations - @Mock, @InjectMocks, @RunWith(MockitoJUnitRunner.class)
 - Step 5 : Mocking List interface
 - Next Steps

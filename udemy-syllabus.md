@@ -1,5 +1,5 @@
 Syllabus of udemy spring-tutorial-for-beginners
-#01-spring-in-depth
+# 01-spring-in-depth
 - Step 1 - Setting up a Spring Project using htttp://start.spring.io
 - Step 2 - Understanding Tight Coupling using the Binary Search Algorithm Example
 - Step 3 - Making the Binary Search Algorithm Example Loosely Coupled
@@ -36,6 +36,45 @@ Syllabus of udemy spring-tutorial-for-beginners
 # 00-framework-tool-introductions/03.JUnit-Introduction-In-5-Steps
 
 # 00-framework-tool-introductions/04.Mockito-Introduction-In-5-Steps
+- @Mock
+- @InjectMocks.
+- @RunWith
+
+# unit test with Spring : 01-spring-in-depth
+- Step 27 - Spring Unit Testing with a Java Context
+- Step 28 - Spring Unit Testing with an XML Context
+- Step 29 - Spring Unit Testing with Mockito
+
+- @Mock creates a mock. @InjectMocks creates an instance of the classand injects the mocks that are created with the @Mock (or @Spy). You must use @Runwith(MockitoJUnitRunner.class) or Mockito.initMocks(this) to initialize these mocks and inject them.
+```java
+@RunWith(MockitoJUnitRunner.class)
+public class SomeCdiBusinessTest {
+    //Inject Mock
+    @InjectMocks
+    SomeCdiBusiness business;
+
+    //Create Mock
+    @Mock
+    SomeCdiDao daoMock;
+
+    @Test
+    public void testBasicScenario() {
+        //when daoMock.getData() method is called, return int[] {2,4}
+        Mockito.when(daoMock.getData()).thenReturn(new int[] {2,4});
+        int actualResult = business.findGreatest();
+        assertEquals(4, actualResult);
+    }
+}
+```
+- Suggest to choose Mockito over Spring unit test. But sometimes (e.g. Spring MVC), you have to use Spring unit test.
 
 # 00-framework-tool-introductions/01.Eclipse-Introduction-in-5-steps
+
+# 00-framework-tool-introductions/05.Spring-Boot-Introduction-In-10-Steps
+
+# 04-spring-jdbc-to-jpa
+- http://www.in28minutes.com/jpa-hibernate-tutorial-for-beginners
+
+# 02-basic-web-application
+
 

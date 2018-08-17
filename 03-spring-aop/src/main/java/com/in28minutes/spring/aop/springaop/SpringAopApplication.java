@@ -11,8 +11,8 @@ import com.in28minutes.spring.aop.springaop.business.Business1;
 import com.in28minutes.spring.aop.springaop.business.Business2;
 
 @SpringBootApplication
-public class SpringAopApplication implements CommandLineRunner{
-	
+public class SpringAopApplication implements CommandLineRunner {
+
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
@@ -20,7 +20,7 @@ public class SpringAopApplication implements CommandLineRunner{
 
 	@Autowired
 	private Business2 business2;
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringAopApplication.class, args);
 	}
@@ -29,5 +29,8 @@ public class SpringAopApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		logger.info(business1.calculateSomething());
 		logger.info(business2.calculateSomething());
+		System.out.println("hello1 " + this.getClass());
+		System.out.println("hello2 " + Business1.class);
+
 	}
 }

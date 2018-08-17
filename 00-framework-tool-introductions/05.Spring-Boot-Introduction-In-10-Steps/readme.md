@@ -2,9 +2,11 @@
 
 - Step 1 : Introduction to Spring Boot - Goals and Important Features
 - Step 2 : Developing Spring Applications before Spring Boot
+  - https://github.com/in28minutes/SpringMvcStepByStep/blob/master/Step37.md
 - Step 3 : Using Spring Initializr to create a Spring Boot Application
 - Step 4 : Creating a Simple REST Controller
 - Step 5 : What is Spring Boot Auto Configuration?
+  - @SpringBootApplication: 1) Spring Context 2) Enable auto configuration 3) component scan
 - Step 6 : Spring Boot vs Spring vs Spring MVC
 - Step 7 : Spring Boot Starter Projects - Starter Web and Starter JPA
 - Step 8 : Overview of different Spring Boot Starter Projects

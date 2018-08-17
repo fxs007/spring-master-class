@@ -16,6 +16,7 @@ import com.in28minutes.database.databasedemo.entity.Person;
 public class PersonJpaRepository {
 
 	// connect to the database
+	// All the operations go to PersistentContext through EntityManager, which is the interface.
 	@PersistenceContext
 	EntityManager entityManager;
 
